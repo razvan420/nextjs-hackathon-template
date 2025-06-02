@@ -14,6 +14,7 @@
     "@types/nodemailer": "^6.4.17",
     "@types/react": "18.2.79",
     "@types/react-dom": "18.2.25",
+    "@vercel/analytics": "^1.5.0",
     "airtable": "0.12.2",
     "autoprefixer": "10.4.20",
     "encoding": "0.1.13",

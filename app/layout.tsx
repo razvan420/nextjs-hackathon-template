@@ -1,7 +1,7 @@
 import "./globals.css";
 
 import { Silkscreen } from "next/font/google";
-
+import { Analytics } from "@vercel/analytics/next"
 import NextAuthSessionProvider from "./_providers/sessionProvider";
 import Navbar from "./_components/Navbar";
 
@@ -39,6 +39,7 @@ export default function RootLayout({
           <div>{children}</div>
           <Bottom Logo={LogoWhite.src} SocialList={SocialList} />
         </NextAuthSessionProvider>
+                <Analytics />
       </body>
     </html>
   );

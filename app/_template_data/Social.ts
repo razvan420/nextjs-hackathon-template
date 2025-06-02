@@ -12,6 +12,10 @@ export const SocialList: SocialType[] = [
     {
         social: "LinkedIn",
         link: "https://www.linkedin.com/in/r%C4%83zvan-l-5825a2229/",
+    },    
+    {
+        social: "Privacy Policy",
+        link: "/",
     },
 
 ]
