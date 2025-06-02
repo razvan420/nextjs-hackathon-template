@@ -11,7 +11,7 @@ export async function GET(req: NextRequest, res: NextResponse) {
       return NextResponse.redirect(process.env.NEXTAUTH_URL!);
     }
 
-    const res = fetch("https://api.descope.com/oauth2/v1/logout", {
+    const res = fetch("https://api..com/oauth2/v1/logout", {
       method: "POST",
       body: new URLSearchParams({
         // @ts-ignore

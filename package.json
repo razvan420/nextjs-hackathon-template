@@ -11,6 +11,7 @@
   "dependencies": {
     "@types/node": "20.17.6",
     "@types/node-fetch": "2.6.11",
+    "@types/nodemailer": "^6.4.17",
     "@types/react": "18.2.79",
     "@types/react-dom": "18.2.25",
     "airtable": "0.12.2",
@@ -19,6 +20,7 @@
     "flowbite": "1.8.1",
     "next": "^14.1.0",
     "next-auth": "4.24.10",
+    "nodemailer": "^6.10.1",
     "postcss": "8.4.47",
     "react": "18.3.0",
     "react-dom": "18.3.0",

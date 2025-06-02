@@ -5,11 +5,11 @@ import 'flowbite'
 import Image from "next/image"
 import Link from 'next/link'
 
-import { useSession, signIn } from "next-auth/react"
+import { useSession } from "next-auth/react"
 
 
 export default function Navbar({ Logo }: { Logo: string }) {
-    const { data: session, status } = useSession()
+    const { data: session } = useSession()
 
     return (
         <nav className="absolute top-0 w-full py-4">
@@ -55,7 +55,7 @@ export default function Navbar({ Logo }: { Logo: string }) {
                             {session ? 
                                 <Link href={"/dashboard"} className="text-[#e9e9e9] bg-[#262d3b] py-2 px-7 border-[#45546e] border-4">Dashboard</Link>
                                 :
-                                <button onClick={() => signIn("descope", { callbackUrl: "/dashboard" })} className="text-[#e9e9e9] bg-[#262d3b] py-2 px-7 border-[#45546e] border-4">Apply</button>
+                                <Link href={"/submit-flags"} className="text-[#e9e9e9] bg-[#262d3b] py-2 px-7 border-[#45546e] border-4 hover:bg-[#1d242b] transition-colors">Submit a Flag</Link>
                             }
                         </li>
                     </ul>
