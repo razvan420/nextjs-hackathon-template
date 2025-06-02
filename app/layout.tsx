@@ -20,9 +20,9 @@ const silkScreen = Silkscreen({
 
 export const metadata = {
   icons: {
-    icon: "/descope.jpeg",
+    icon: "/logosec.png",
   },
-  title: "Stefanini CTF by Secforit",
+  title: "Stefanini CTF by SecForIT",
   description: "Created by hackers for hackers.",
 };
 
