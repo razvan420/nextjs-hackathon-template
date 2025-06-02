@@ -28,7 +28,7 @@ export default function Bottom({ Logo, SocialList }: { Logo: string, SocialList:
             {/* Copyright Section */}
             <div className='w-full border-t border-gray-600 px-4 py-3'>
                 <p className='text-center text-gray-400 text-sm'>
-                    © {currentYear} <a href="mailto:contact@secforit.ro" className='text-white font-semibold hover:text-blue-300 transition-colors duration-200'>Lisman Adrian-Razvan</a> @ <a href="https://secforit.ro" target="_blank" rel="noopener noreferrer" className='text-white font-semibold hover:text-blue-300 transition-colors duration-200'>SECFORIT</a> - All rights reserved. Crafted with ☕ and 🧠
+                    © {currentYear} <a href="mailto:razvan@secforit.ro" className='text-white font-semibold hover:text-blue-300 transition-colors duration-200'>Lisman Adrian-Razvan</a> @ <a href="https://secforit.ro" target="_blank" rel="noopener noreferrer" className='text-white font-semibold hover:text-blue-300 transition-colors duration-200'>SECFORIT</a> - All rights reserved. Crafted with ☕ and 🧠
                 </p>
             </div>
         </div>
