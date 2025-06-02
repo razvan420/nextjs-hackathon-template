@@ -1,11 +1,10 @@
-import Pfp from '../_assets/team/pfp.png'
+import Pfp from '../_assets/team/pfp.jpeg'
 
 
 export type TeamType = {
     image: string
     name: string,
     role: string,
-    twitter: string,
     website: string,
 }
 
@@ -13,9 +12,8 @@ export type TeamType = {
 export const TeamList: TeamType[] = [
     {
         image: Pfp.src,
-        name: "Descope",
-        role: "Creator",
-        twitter: "@descopeinc",
-        website: "https://descope.com/"
+        name: "Razvan",
+        role: "Analyst / Engineer",
+        website: "I love to breaking things...",
     }
 ]

@@ -1,40 +1,26 @@
 export type DayType = {
-    time: string,
-    description: string
+   time: string,
+   description: string
 }
-
 
 export type ScheduleType = {
-    date: string,
-    events: DayType[],
+   date: string,
+   events: DayType[],
 }
 
-
 export const ScheduleList: ScheduleType[] = [
-    {
-        date: "Monday July 10 2023",
-        events: [
-            {
-                time: "12:00 PM",
-                description: "Free Boba in the Engineering Building. Bring your hacker passes."
-            },
-            {
-                time: "1:00 PM",
-                description: "Descope and GGV Capital are giving a speech on startups!"
-            }
-        ]
-    },
-    {
-        "date": "Tuesday July 11 2023",
-        "events": [
-            {
-                "time": "3:00 PM",
-                "description": "Descope workshop in Room 117! Learn all about authentication and user management!"
-            },
-            {
-                "time": "9:00 PM",
-                "description": "How to build a website in Next.js with Descope!"
-            }
-        ]
-    },
+
+   {
+       date: "NOW... let's do some maths",
+       events: [
+           {
+               time: "XOR Marathon",
+               description: "Single-byte XOR with a twist. Are you able to find the right key? " 
+           },
+           {
+               time: "decrypt me",
+               description: "1c0e475b4a5d5b4e175b4a0b170e0a5b4c5d4e175b175d4b0a0b475b0e5d"
+           }
+       ]
+   }
 ]
