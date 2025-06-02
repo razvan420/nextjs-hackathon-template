@@ -5,6 +5,6 @@ export type AboutType = {
 
 
 export const AboutParagraph: AboutType = {
-    firstParagraph: "AuthHacks is the world's coolest authentication hackathon template built using Descope! ",
-    secondParagraph: "It comes built-in using Descope authentication, protected API routes, Next.js's new app router, and customizable hackathon pages. Features include an About, Speakers, Sponsors, and FAQ sections along with a Team page and Dashboard page for onboarding and updating hackers/participants."
+    firstParagraph: "Your mission is to investigate the DNS records of ctf.secforit.ro. Hidden in the depths of the domain name system lies a secret flag. ",
+    secondParagraph: "=> ctf.secforit.ro <=",
 }
