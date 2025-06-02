@@ -11,7 +11,7 @@ import { SponsorList } from './_template_data/Sponsor'
 import { FAQList } from './_template_data/FAQ'
 import { AboutParagraph } from './_template_data/About'
 
-import AboutImage from "./_assets/about/umberto-deb2EnbWPr8-unsplash.jpg"
+import AboutImage from "./_assets/about/IMG_5014.png"
 
 
 export default function Home() {

@@ -8,12 +8,12 @@ export default function Team() {
            <h1 className='title'>WHO AM I?</h1>
            <div className="flex flex-row w-full items-start justify-center h-full">
                {TeamList.map((person, i) => (
-                   <div key={i} className="w-1/4 max-md:w-[80%]">
+                   <div key={i} className="w-1/3 max-md:w-[80%]">
                        <Image 
                            src={person.image}
                            alt="pfp"
-                           width={800}
-                           height={600}
+                           width={500}
+                           height={500}
                            className="w-full"
                            placeholder="blur"
                            blurDataURL={person.image}

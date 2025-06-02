@@ -22,8 +22,8 @@ export const metadata = {
   icons: {
     icon: "/descope.jpeg",
   },
-  title: "Next.js Hackathon Template with Descope Next-Auth",
-  description: "Created by Descope",
+  title: "Stefanini CTF by Secforit",
+  description: "Created by hackers for hackers.",
 };
 
 export default function RootLayout({

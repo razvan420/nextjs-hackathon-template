@@ -11,7 +11,7 @@ export type ScheduleType = {
 export const ScheduleList: ScheduleType[] = [
 
    {
-       date: "NOW... let's do some maths",
+       date: "I heard you like crypto...",
        events: [
            {
                time: "XOR Marathon",
