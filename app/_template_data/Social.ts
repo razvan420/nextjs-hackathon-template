@@ -7,18 +7,11 @@ export type SocialType = {
 export const SocialList: SocialType[] = [
     {
         social: "Instagram",
-        link: "/",
+        link: "https://www.instagram.com/l.razzz97/",
     },
     {
         social: "LinkedIn",
-        link: "/",
+        link: "https://www.linkedin.com/in/r%C4%83zvan-l-5825a2229/",
     },
-    {
-        social: "Twitter",
-        link: "/",
-    },
-    {
-        social: "Facebook",
-        link: "/",
-    },
+
 ]
