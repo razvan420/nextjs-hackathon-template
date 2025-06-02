@@ -15,7 +15,7 @@ export const SocialList: SocialType[] = [
     },    
     {
         social: "Privacy Policy",
-        link: "/",
+        link: "/privacy-policy",
     },
 
 ]

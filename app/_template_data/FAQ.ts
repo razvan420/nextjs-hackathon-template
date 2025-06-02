@@ -11,6 +11,6 @@ export const FAQList: FAQType[] = [
     },    
     {
         question: "Who can attend?",
-        answer: "whoever gets to type faster!"
+        answer: "1337"
     }
 ]
