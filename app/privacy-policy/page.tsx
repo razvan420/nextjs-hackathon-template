@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
         <div className="flex items-center justify-between mb-8">
           <h1 className='title mb-0'>Privacy Policy & Data Processing</h1>
           <Link 
-            href="/" 
+            href="/privacy-policy" 
             className="text-gray-600 hover:text-gray-800 text-lg"
           >
             ← Back to CTF

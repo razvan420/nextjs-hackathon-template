@@ -9,7 +9,6 @@ import Form from "./_components/Form";
 import Application from "./_components/Application";
 import Info from "./_components/Info";
 
-import { AnnouncementsList } from "@/app/_template_data/Announcements";
 
 const getData = async () => {
   const session = await getServerSession(authOptions);
@@ -44,7 +43,6 @@ export default async function Dashboard() {
         {airtableRecord ? (
           <>
             <Status accepted={airtableRecord["Accepted"]} />
-            {airtableRecord["Accepted"] && <Info data={AnnouncementsList} />}
             <Application application={airtableRecord} />
           </>
         ) : (
