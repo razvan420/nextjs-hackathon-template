@@ -9,6 +9,7 @@ import { ScheduleList } from './_template_data/Schedule'
 import { SpeakerList } from './_template_data/Speakers'
 import { FAQList } from './_template_data/FAQ'
 import { AboutParagraph } from './_template_data/About'
+import { SponsorList } from './_template_data/Sponsor'
 
 import AboutImage from "./_assets/about/IMG_5014.png"
 
@@ -21,6 +22,7 @@ export default function Home() {
         <About data={AboutParagraph} AboutImage={AboutImage.src} />
         <Schedule data={ScheduleList} />
         <Speakers data={SpeakerList} />
+        <Sponsors data={SponsorList} />
         <FAQ data={FAQList} />
       </div>
     </div>
