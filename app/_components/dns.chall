@@ -1,0 +1,43 @@
+;;
+;; DNS Treasure Hunt Challenge Records
+;; Domain: ctf.secforit.ro
+;; Single Flag Multi-Index Challenge
+;;
+
+;; Component 1: Alpha TXT record (Base64 encoded "DIGITAL")
+alpha-secret.ctf.secforit.ro.    300    IN    TXT    "RElHSVRBTA=="
+
+;; Component 2: IP-encoded message (192.83.69.67 = ASCII: S.E.C)  
+ip-msg.ctf.secforit.ro.         300    IN    A      192.83.69.67
+
+;; Component 3: CNAME chain leading to "FORENSICS"
+chain1.ctf.secforit.ro.         300    IN    CNAME  chain2.ctf.secforit.ro.
+chain2.ctf.secforit.ro.         300    IN    CNAME  chain3.ctf.secforit.ro.
+chain3.ctf.secforit.ro.         300    IN    CNAME  forensics.endpoint.com.
+
+;; Component 4: MX priorities spelling "HUNT" (72=H, 85=U, 78=N, 84=T)
+mx-puzzle.ctf.secforit.ro.      300    IN    MX     72 mail1.example.com.
+mx-puzzle.ctf.secforit.ro.      300    IN    MX     85 mail2.example.com.
+mx-puzzle.ctf.secforit.ro.      300    IN    MX     78 mail3.example.com.
+mx-puzzle.ctf.secforit.ro.      300    IN    MX     84 mail4.example.com.
+
+;; Component 5: TTL values spelling "2025" (50=2, 48=0, 50=2, 53=5)
+time-a.ctf.secforit.ro.         50     IN    TXT    "part1"
+time-b.ctf.secforit.ro.         48     IN    TXT    "part2"  
+time-c.ctf.secforit.ro.         50     IN    TXT    "part3"
+time-d.ctf.secforit.ro.         53     IN    TXT    "part4"
+
+;; Challenge Guidance Records
+start.ctf.secforit.ro.          300    IN    TXT    "Welcome to DNS Treasure Hunt! Find 5 components: alpha, ip, chain, mx, time"
+hint1.ctf.secforit.ro.          300    IN    TXT    "Component 1: Look for alpha-secret subdomain"
+hint2.ctf.secforit.ro.          300    IN    TXT    "Component 2: IP addresses can encode ASCII messages"
+hint3.ctf.secforit.ro.          300    IN    TXT    "Component 3: Follow the CNAME chain starting at chain1"
+hint4.ctf.secforit.ro.          300    IN    TXT    "Component 4: MX priorities 72,85,78,84 spell something"
+hint5.ctf.secforit.ro.          300    IN    TXT    "Component 5: TTL values 50,48,50,53 from time-* records"
+
+;; Decoy records to add complexity
+decoy1.ctf.secforit.ro.         300    IN    TXT    "This is not the flag you're looking for"
+decoy2.ctf.secforit.ro.         300    IN    A      10.0.0.1
+red-herring.ctf.secforit.ro.    300    IN    CNAME  nowhere.example.com.
+fake-alpha.ctf.secforit.ro.     300    IN    TXT    "ZmFrZSBmbGFn"
+wrong-chain.ctf.secforit.ro.    300    IN    CNAME  deadend.example.com.
